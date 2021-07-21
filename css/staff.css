@@ -1,75 +1,114 @@
 body {
-  background-color: purple;
+	background-color: purple;
+}
+h1.hela {
+	position: relative;
+	color: aqua;
+	top: 10px;
+	left: 3%;
 }
 .column {
-  float: left;
-  width: 15%;
-  padding: 0 5px;
-  align-items: center;
-  position: relative;
-  margin-left: 4%;
-  top: 60px;
-  left: -1%;
+	float: left;
+	width: 15%;
+	padding: 0 5px;
+	align-items: center;
+	position: relative;
+	margin-left: 4%;
+	top: 60px;
+	left: -1%;
+}
+
+.columnp {
+	float: left;
+	width: 15%;
+	padding: 0 5px;
+	align-items: center;
+	position: relative;
+	margin-left: 4%;
+	top: 650px;
+	left: -60%;
+}
+
+h1.pri {
+	position: relative;
+	color: aqua;
+	top: 610px;
+	left: -55%;
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {margin: 0 -1px;}
+.row {
+	margin: 0 -1px;
+}
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .card {
-  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 2.0);
-  max-width: 650px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+	box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 2);
+	max-width: 650px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
 }
 
-.card>.hoverable__tooltip {
-  display: inline;
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  background: #888;
-  border: 1px solid black;
+.cardp {
+	box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 2);
+	max-width: 650px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.card > .hoverable__tooltip {
+	display: inline;
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	background: #888;
+	border: 1px solid black;
 }
 
 .title {
-  color: white;
-  font-size: 18px;
+	color: white;
+	font-size: 18px;
+}
+.titlep {
+	color: white;
+	font-size: 18px;
 }
 
 button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 20px;
-  color: white;
-  background-color: #5d1661;
-  text-align: center;
-  cursor: help;
-  width: 100%;
-  font-size: 20px;
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	background-color: #5d1661;
+	text-align: center;
+	cursor: help;
+	width: 100%;
+	font-size: 20px;
 }
 
 a {
-  text-decoration: none;
-  font-size: 22px;
-  color: white;
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
 }
 
 body {
-  color: white;
+	color: white;
 }
 
 h1 {
-  color: white;
+	color: white;
 }
 
-button:hover, a:hover {
-  opacity: 0.2;
+button:hover,
+a:hover {
+	opacity: 0.2;
 }
