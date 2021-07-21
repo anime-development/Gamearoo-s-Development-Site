@@ -1,0 +1,75 @@
+body {
+  background-color: purple;
+}
+.column {
+  float: left;
+  width: 15%;
+  padding: 0 5px;
+  align-items: center;
+  position: relative;
+  margin-left: 4%;
+  top: 60px;
+  left: -1%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -1px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 2.0);
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card>.hoverable__tooltip {
+  display: inline;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  background: #888;
+  border: 1px solid black;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  background-color: #5d1661;
+  text-align: center;
+  cursor: help;
+  width: 100%;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+body {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+button:hover, a:hover {
+  opacity: 0.2;
+}
