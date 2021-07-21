@@ -1,0 +1,24 @@
+
+
+<div class="column">
+			<div class="card">
+				<img
+					src="staff-images/Ben.png"
+					alt="Ben Markerson"
+					style="width: 100%"
+				/>
+				<h1>Name Here</h1>
+				<p>No Badges!</p>
+                <p>‏‏‎ ‎‎</p>
+				<p class="title">Moderator</p>
+				<p>Discord:</p>
+				<p>
+					<button
+						class="button"
+						onclick="window.location.href='https://discordapp.com/users/478780901778653184/'"
+					>
+						Ben Markerson#2755
+					</button>
+				</p>
+			</div>
+		</div>
