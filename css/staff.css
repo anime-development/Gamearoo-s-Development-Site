@@ -22,8 +22,13 @@ img.staffav {
 	background-size: auto;
 	background-position: center;
 	border-radius: 100%;
+	width: 128px;
+	height: 128px;
 }
-
+img.status {
+	width: 60px;
+	height: 60px;
+}
 .columnp {
 	float: left;
 	width: 15%;
@@ -58,6 +63,7 @@ h1.pri {
 	max-width: 650px;
 	background-color: #18191c;
 	margin: auto;
+	border-radius: 11%;
 	text-align: center;
 	font-family: arial;
 }

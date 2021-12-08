@@ -3,5 +3,5 @@ staff-images
 cgi-bin
 bots-img
 verified.png
-badges
 *.zip
+.htaccess
