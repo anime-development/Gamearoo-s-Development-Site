@@ -1,26 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Gamearoo's Development - Punish Command ram v10.x</title>
-		<meta charset="UTF-8" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Gamearoo Development</title>
+
 		<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
 		<link rel="stylesheet" href="https://gamearoodev.com/css/navbar.css" />
-		<meta name="description" content="Punish Command info for ram v10.x">
-		<meta name="author" content="Gamearoo">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="https://gamearoodev.com/logo.png" />
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		/>
+		<!-- Google Fonts -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+		/>
+
+		<style>
+			body {
+				font-family: "Roboto", sans-serif;
+				background-color: #333333;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
 	</head>
+
 	<body>
-		 <div class="navbar">
-				<a href="https://gamearoodev.com">Home</a>
-				<a href="https://gamearoodev.com/staff">Our Staff</a>
-				<a href="https://gamearoodev.com/bots">Our Bots</a>
-				<a href="https://gamearoodev.com/ramv10/info">Ram v10 info</a>
-				
+		<nav>
+			<div class="nav-wrapper navbar-transition" style="background: #800080">
+				<a
+					href="/"
+					class="brand-logo"
+					style="margin-left: 10px; font-size: 20px"
+					>Gamearoo's Development</a
+				>
+
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/staff"
+							>Our Staff</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/bots"
+							>Our Bots</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/ramv10/info"
+							>Ram v10 info</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://discord.gg/Gamearoo"
+							>Support</a
+						>
+					</li>
+				</ul>
 			</div>
-		<div class="header">
-			<h1>Gamearoo's Development</h1>
-			<p>Ram v10.x Punish Command!</p>
-		</div>
+		</nav>
+
 		<center>
 			<h1><bold>What is enabled:</bold></h1>
 
@@ -42,29 +117,78 @@
 				We only have little time to get this version out dw most of these should
 				start appearing in v10.1.x or v10.2.x
 			</p>
-			<p>We did however keep the commands that do the same thing if you wish to continue to do the action you are looking to do run r.help mod</p>
+			<p>
+				We did however keep the commands that do the same thing if you wish to
+				continue to do the action you are looking to do run r.help mod
+			</p>
 			<p>Keep up with this page for more updates in the future</p>
 		</center>
+		<div class="fixed-action-btn">
+			<a
+				class="btn-floating btn-large"
+				style="width: 70px; height: 70px; background-color: #5865f2"
+			>
+				<i class="large material-icons" style="font-size: 40px; margin-top: 6px"
+					>discord</i
+				>
+			</a>
+			<ul>
+				<li>
+					<a
+						class="btn-floating waves-effect waves-light btn-large tooltipped"
+						style="background-color: transparent"
+						data-position="left"
+						data-tooltip="Gamearoo's Development"
+						href="https://discord.gg/6Aq6Zu5VN7"
+						target="_blank"
+						><img
+							width="80"
+							style="
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%, -50%);
+							"
+							src="https://gamearoodev.com/logo.png"
+							\
+					/></a>
+				</li>
+			</ul>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".fixed-action-btn").floatingActionButton({
+					direction: "buttom",
+				});
+
+				$(".tooltipped").tooltip();
+
+				$("img").on("mousedown", function () {
+					return false;
+				});
+
+				$("a").on("mousedown", function () {
+					return false;
+				});
+			});
+		</script>
 	</body>
-	<footer>
+
+	<footer
+		style="
+			position: fixed !important;
+			padding: 10px 10px 0px 10px !important;
+			bottom: 0 !important;
+			width: 100% !important;
+			/* Height of the footer*/
+			height: 40px !important;
+			background: grey !important;
+		"
+	>
 		<p class="copyright">
 			<a href="https://discord.gg/s9ZCSj8zny">Discord server</a> © Gamearoo's
 			Development 2021
 		</p>
 	</footer>
 </html>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API = Tawk_API || {},
-		Tawk_LoadStart = new Date();
-	(function () {
-		var s1 = document.createElement("script"),
-			s0 = document.getElementsByTagName("script")[0];
-		s1.async = true;
-		s1.src = "https://embed.tawk.to/5dc1df75154bf74666b7acf7/default";
-		s1.charset = "UTF-8";
-		s1.setAttribute("crossorigin", "*");
-		s0.parentNode.insertBefore(s1, s0);
-	})();
-</script>
-<!--End of Tawk.to Script-->
