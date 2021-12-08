@@ -1,44 +1,177 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Gamearoo Development</title>
 
-<head>
-    
+		<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
+		<link rel="stylesheet" href="https://gamearoodev.com/css/navbar.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="https://gamearoodev.com/logo.png" />
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		/>
+		<!-- Google Fonts -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+		/>
 
-    <title>Gamearoo's Development -  404 Error!</title>
-<style type=text/css>
+		<style>
+			body {
+				font-family: "Roboto", sans-serif;
+				background-color: #333333;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
+	</head>
 
-p {    color: blue;    
-font-weight: 900;    
-font-size: 20px;    
-position: relative;
-font-family: Helvetica, Arial, sans-serif;    
-text-align: center;
-top: 300px;
-}
-img {
-    width: 128px;
-    align-items: center;
-    position: relative;
-    left: 900px;
-    top: 300;
-}
-</style>
+	<body>
+		<nav>
+			<div class="nav-wrapper navbar-transition" style="background: #800080">
+				<a
+					href="/"
+					class="brand-logo"
+					style="margin-left: 10px; font-size: 20px"
+					>Gamearoo's Development</a
+				>
 
-</head>
-<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
-<link rel="stylesheet" href="https://gamearoodev.com/css/navbar.css" />
-<img src="https://www.verticalrail.com/wp-content/uploads/2015/05/404-Page-Not-Found.png" \>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/staff"
+							>Our Staff</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/bots"
+							>Our Bots</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/ramv10/info"
+							>Ram v10 info</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://discord.gg/Gamearoo"
+							>Support</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-<body>
-    <div class="navbar">
-        <a href="https://gamearoodev.com">Home</a>
-        <a href="https://gamearoodev.com/staff">Our Staff</a>
-        <a href="https://gamearoodev.com/bots">Our Bots</a>
-        <a href="https://gamearoodev.com/ramv10/info">Ram v10 info</a>
-        <a href="https://gamearoodev.com/ramv10/Changelog">Ram v10.0.0 changelog</a>
-    </div>
-    <p>This Page Is missing or no longer exists. 
-    <br><br> 
-    If this is in error please contact support or checking the url.</p>
+		<center>
+			<img
+				src="https://www.verticalrail.com/wp-content/uploads/2015/05/404-Page-Not-Found.png"
+				\
+			/>
+			<p style="color: aqua">
+				This Page Is missing or no longer exists. <br /><br />
+				If this is in error please contact support or checking the url.
+			</p>
+		</center>
+		<div class="fixed-action-btn">
+			<a
+				class="btn-floating btn-large"
+				style="width: 70px; height: 70px; background-color: #5865f2"
+			>
+				<i class="large material-icons" style="font-size: 40px; margin-top: 6px"
+					>discord</i
+				>
+			</a>
+			<ul>
+				<li>
+					<a
+						class="btn-floating waves-effect waves-light btn-large tooltipped"
+						style="background-color: transparent"
+						data-position="left"
+						data-tooltip="Gamearoo's Development"
+						href="https://discord.gg/6Aq6Zu5VN7"
+						target="_blank"
+						><img
+							width="80"
+							style="
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%, -50%);
+							"
+							src="https://gamearoodev.com/logo.png"
+							\
+					/></a>
+				</li>
+			</ul>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".fixed-action-btn").floatingActionButton({
+					direction: "buttom",
+				});
 
-</body>
+				$(".tooltipped").tooltip();
+
+				$("img").on("mousedown", function () {
+					return false;
+				});
+
+				$("a").on("mousedown", function () {
+					return false;
+				});
+			});
+		</script>
+	</body>
+
+	<footer
+		style="
+			position: fixed !important;
+			padding: 10px 10px 0px 10px !important;
+			bottom: 0 !important;
+			width: 100% !important;
+			/* Height of the footer*/
+			height: 40px !important;
+			background: grey !important;
+		"
+	>
+		<p class="copyright">
+			<a href="https://discord.gg/s9ZCSj8zny">Discord server</a> © Gamearoo's
+			Development 2021
+		</p>
+	</footer>
 </html>
