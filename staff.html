@@ -3,16 +3,26 @@
 	<head>
 		
 		
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gamearoo's Development - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Gamearoo Development - Staff</title>
 
-		
+		<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
+		<link rel="stylesheet" href="https://gamearoodev.com/css/navbar.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
-        <link href="css/staffedited.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="icon" type="image/png" href="https://gamearoodev.com/logo.png">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="https://gamearoodev.com/logo.png" />
 		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
@@ -23,26 +33,31 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 		/>
-		<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
-		<link rel="stylesheet" href="https://gamearoodev.com/css/staff.css" />
+		<link rel="stylesheet" href="css/staff.css" />
 
 		<style>
-            body {
-                font-family: 'Roboto', sans-serif;
-                background-color: #333333;
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-        </style>
+			body {
+				font-family: "Roboto", sans-serif;
+				background-color: #333333;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
+		
 		
 
 		
 	
 	</head>
+	<script type="text/javascript" async>
+		$(document).ready(function () {
+			$(".dropdown-trigger").dropdown({ hover: true, alignment: "bottom" });
+		});
+	</script>
 	<script type="text/javascript" async>
 
 		fetch("https://ramdash.gamearoo.top:3001/dashboard/api/discord/staff/171373018285735936").then(response => response.json()).then(gamearoo => {
@@ -306,7 +321,7 @@
 			var x = document.getElementById('ajimg')
 			console.log(x.src)
               
-            if (x.src === "https://gamearoodev.com/staff-images/xAJ.png.pagespeed.ic.8k2_1g8q7r.webp") {
+            if (x.src === "data:image/webp;base64,UklGRhgKAABXRUJQVlA4IAwKAABQMwCdASqAAIAAPm0skkakIiGhLBK+kIANiWIAwQ+czpylbZ7nPW3HCh4bh27svRu6YLE5ZBHJHGb9D+y78gJq7vRMveM2wTmZes/QHSwL8xRfREfP7n/Uc7rNkwfV3zUNpiiw57DvlLp+MeFNzqIUY2tlAj1us99/E1CgNx8aVrqV5e6hUWKkfGFgHQOtf1xPuEh9UWV04qhobJE12UL/Nhko5f79N73JdPTJJITugXjlWF4WtDtSIaolWSczP5jWRXpvyDdTTS//PVVU85WXya47kSiBp1b72nXz+mYgyj7QpPSYhUDWqPKNNhQtlX7Z/2twTCOoImsLmXu8zyXhiJKOPMNjfevTKYZtkYLKfXQH45yvjv5vd3PHo3mgih74klEf3BeH2LGdorGnF4deJ1ujYBB9vZW/9JFb76vekVlc6yHs9+TzsvSb5W0plWoBZbsCc6GvEiPT/BkhEpTm/4ym3p4Eydc32ZOd6HTZEPvu8N/12b/kqJDIeEHi6pk/mwpFrN9e272mROZjpk6YnP2UgjUyAIOugMyH1pCflZSmwAD8NVuOpmDmVZE9on2Ifi/of9scYxi6268owEd6QrpiV0/6JzQMFgs//0TD7DdP81nyLEf9LeH2CNxVlCTwuobP8WY3ea+4mBPj4Kv0JdXQViFukkvQtnsiwhPauXbvXdTcgvWWmQ05144BlEHFeR304Pmdv/w9dGBOb4uFrAkEstNZBWrgOU8fjKYqaGxVTDMeeX4xDWZ8crsiYc31vvJ2UPRVmpbIgL26ruvOit4vhA97r2Eu/Dg6GO1HuTeWrX9CKAibReXrw/Lo9oCNTIZKl2osoic2Hw6LnhrQN6mZDEg+ITZ9RRFLllEP7u5yh6dQLSvt8oILo4fwMiSFET1QFEXqddlmzGAJnnv7UKk3vYc+DoH2NzYOLvaXE1N71sn2CgBCYFiTkBxWUsIHxiMMqvJwCFXaRGueybhfylvhCIR03bVtvI5Z7uCEFcU0+zakwvJ2ZiIkmewYDi9vO6i2gF7cyGzP4G4771SaCugM+EpIFyg/LNw1ci0BBE3lr8fjlRj7jqjctis/7NdvUDDGaNq/Cvew2yGbhZ9MeuX8HbI8SPmsZDi5UQcTFHCTQpmPjo1aauuTUDZcvA6e53aCxogGqTf7GCNeXtzaM+XH0338BYYrzIqoU1zkqWt3FVintnNigyF43UJrboJQGQyJnRVouA8IXadM6D37FtQGtRyWk+USjy8Dh2zebRIDa9md86p0H/gFluEvCiFmP09wiyOZFV8U9Jen6ed1nVVY4zP/ZkNKg4htROkeTuZ1h5mVlddAwarumPlDWiz0UP/B+KhvUpKtElRi6vnstGQ00ndPhRDFdrj8G9wY/1VBxYiz7oQ0TEHZphSgprBygtSBELQuS8Eq97dSesX8uGzQNd+Cc2bK3gZqHJH4pCmEQAwByBGlODFfZrRgyUHjgoJbK+VZTDnr839f1ENgmhlPVGogf6d+3qP8IhO/vikskzlJBHDg8sQJZ5L/98UsfXYOqp5uH7Ngs/4yDf08oaWdSaiJ5XbgwAxUjiv3b/62VMO/HJq7/eR6zYKeTzKN6dZD56+FYMTK87SR7/PGga88/tCW/I2Qj55w2jsz1R0qtfzRAKjgP2pZvotapU3/kDuimrKjpRtUsZ5ljVP+3Ws/N138iadl/G7s4xS+U9iD6FmE3psMBf2UTlGNI1x+C0XTseSvST30X9q9FQKC0FI2FM9XrjAdy+b+mmOTwciUsrg8D04Vd+Srzjp7koWUO53lMrFynouuqSqcVWDcMw9MiqkE0KpSOPqewBqnhPJVjECuFVVbsdaJO8kx/mH32Et80GsVurb4mQAkZ3OeW0MtSgyAhbNOUv+rxzh0GnpeKyVWoQ2NX+9mMIVa9qSWvDA0i10l5Sq/qD7ejS/17HohMBl9p8X2BizvX9tv5UWk94JBRVBr7mtsA1TYRSJyU50kZsHJhJyb5BId9ZLEqMkHW/faf1Vi93/IWAYJatMcMLSur62ad4PDJCOQJ+m6nKgS1JjhtSfu7yqszoZiVwWN0AyW1EdfNOM0jxaQL2Kh7VYmrs93/HbUbbovBTtWauQqrlzg7Fv+/1FS7AP//mU/t0QAFeL8YjRm/r9mJ2fIs57h9haViNdXWe63UtPZl6H7pBepvTndxszvrpzZLtk4s7/rrXhkEeAmtiuVH9cwzT/xoUBb/6kxW4msrs5PPBNK3Wa735Na6uCdn4lY8hakn9GXCdxGM8/cMXkxfa/frJng3r0KDia8IU8Kwv78SAUlg2uOBRJkIHkangS53qTfJq1RgjQ294LW+qjQ0jyMjWwWRyWnDS/pfdCNuWlA7qzLRuY2zrQPc0X+qkcPhu62yvILp7oqR993fgFvwmk26jUFp98x7m2ZXvWMppdq2Jmw3b3mFiRNzhxOwG5zB+WZPnoDvYDLw7pdVkfJErXy2+V6nOcHNpM6rAObVH4MJyEFkT/vIfx+zfOwxiw5F5Tsvi4LLB/r7RL1ponifCCvQzr7EHT4rHQCckcGpcjas6DREn1YhLUpIsf4hg9tjJ+laYhJ9enB48Wzt33rWSclpzqg5Fqt0AgEZ+Uju6h/eP5BQo2jrXL85oPVvQ0dfI98Xn+1ZjADp9FZ6LinQsEpApB/W5kge9/XmSziwKNeQp5nDcVfGmOm49ww4/B8deUg1V4SMUBni338flyvph/sogFr66Yt/PgAwMHnruinY93p7X36xX2jg/Be/Kq243/LgLumwSZKJOxWQxxop9l6pqe//FXXJfzbGSr9pakl6oJEB8Ayiju6KrCc08XZMpbsRsHrx7Q3RaZiWPNRy4Aqho2Uqz71f+Yz9Wa6ynJzcsvHwRIqg1XAnfby8YRL9pOt9/Qqa1W1SzQ3YGMbcndGlwCUI4/shfq3ewcI+wJKU4iFQmeuJWwltHIqwA1iMjuWeKBrbfpytmZNwRtuybUtxKyswirjL58nofMCXRh5RDXihWPYx7OHfnUnibpd9CeFQdpXY5rWjYfH4PNkpB2wJ6RCfeTBt7qxjO3gDAvsACNK10geJ90LejODJUddaUb6tXpdA6WVq6tuonszH8KTL7RpLjI+au6nbOer2l8TCrOOZZ0PH8UoBu8BadOyFLu9xsdkxZHjzpFENoVQfCYVnj24wRpONzNVkPapiG1okwkHPEGGrGpxZCnfJoAoDNMvof26ajvnINtq31Y6LPviAa734owOEfgTYwiEciO88rJukRW++98lAA4IXy6ouPjrGhLboBiUFyBG58K1ticsTnUBJ1nzQuU6YPa20PrWDpZ/5p4Y0p8ScVLXGK4qb+WZSo7KhnoAQ+yx9USNcKIjS7oLhWSw8TusuJQyqOzl3CgtAPjRfYdJ4Xs9jSwL5539H4N06HfewgAA") {
                 x.src = gamearoo.icon;
             } else {
                 x.innerHTML = "Gamearoo";
@@ -336,37 +351,145 @@
         
         
 	})
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+  });
 
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+	
+  });
 	
 
 
 	</script>
 	
 	<body>
+		<ul
+			id="dropdown1"
+			style="
+				position: absolute;
+				margin-top: 250%;
+				right: 0px;
+				background-color: magenta;"
+			class="dropdown-content"
+		>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/info"
+					>Info</a
+				>
+			</li>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/punish"
+					>Punish Command</a
+				>
+			</li>
+
+			<!-- <li><a style="color: white" href="#!">ChangeLog</a></li> -->
+		</ul>
 		<nav>
-			<div class="nav-wrapper navbar-transition" style="background: #800080;">
-				<a href="/" class="brand-logo" style="margin-left: 10px; font-size: 20px;">Gamearoo's Development</a>
+			<div class="nav-wrapper navbar-transition" style="background: #800080">
+				<a
+					href="/"
+					class="brand-logo"
+					style="margin-left: 10px; font-size: 20px"
+					>Gamearoo's Development</a
+				>
 
 				<ul class="right hide-on-med-and-down">
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com">Home</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/staff">Our Staff</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/bots">Our Bots</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/ramv10/info">Ram v10 info</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://discord.gg/Gamearoo">Support</a></li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/staff"
+							>Our Staff</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/bots"
+							>Our Bots</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#!"
+							>Ram v10<i class="material-icons right">arrow_drop_down</i></a
+						>
+					</li>
+
+					<!-- <li>
+						<a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#"
+							>Ram v11 Beta<i class="material-icons right"
+								>arrow_drop_down</i
+							></a
+						>
+					</li> -->
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://discord.gg/Gamearoo"
+							>Support</a
+						>
+					</li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="column">
-			<div class="card">
+		<div  class="column">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
 				<img class="staffav" id='imggame' src="staff-images/gamearoo.gif" alt="Gamearoo" />
-				<h1 style="font-size: 39px;" class='game'>Gamearoo</h1>
+				<h1 style="font-size: 39px; position: absolute; top: 180px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);" class='game'>Gamearoo</h1>
+
+				<p style="position: absolute; top: 167px;">
+					 
+					
+					<img
+						class="tooltipped" data-tooltip="HypeSquad Bravery"
+						src="badges/BraveryLogo.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Early Verified Bot Developer"
+						src="badges/verified_developer_badge.png"
+						alt="Gamearoo"
+						style="width: 10%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Subscriber since Apr 5, 2019 "
+						src="badges/Nitro_badge.png"
+						alt="Gamearoo"
+						style="width: 10%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Server Boosting since Dec 28, 2020"
+						src="badges/boost.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+				</p>
 				
-				<img id='statusgame' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
-				<p class="title">Founder</p>
-				<p>Discord:</p>
-				<p>
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" id='statusgame' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<p style="font-size: 20px; position: absolute; top: 250px; left: 40px;" class="title"> Job: Founder</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;" >Discord:</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
 						class="button"
 						id='gametag'
@@ -374,147 +497,248 @@
 					>
 						Gamearoo#0001
 					</button>
-					<p>‏‏‎ ‎‎</p>
+					
 				</p>
 			</div>
 		</div>
 
-		<div class="column">
-			<div class="card">
+		<div  class="column">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
-				<img
-					class="staffav"
-					id='imggolden'
-					src="staff-images/Xd_Golden_Tiger.gif"
-					alt="Xd_Golden_Tiger"
-				/>
-				<h1 style="font-size: 30px;" class='golden'>Xd_Golden_Tiger</h1>
-				
-				<img id='statusgolden' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<img class="staffav" id='imggolden' src="staff-images/Xd_Golden_Tiger.gif" alt="Xd_Golden_Tiger" />
+				<h1 style="font-size: 30px; position: absolute; top: 200px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);" class='golden'>Xd_Golden_Tiger</h1>
 
-				<p class="title">Owner</p>
-				<p>Discord:</p>
-				<p>
+				<p style="position: absolute; top: 167px;">
+					 
+					
+					
+					<img
+						class="tooltipped" data-tooltip="HypeSquad Bravery"
+						src="badges/BraveryLogo.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Subscriber since Jun 29, 2021"
+						src="badges/Nitro_badge.png"
+						alt="Gamearoo"
+						style="width: 10%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Server Boosting since Nov 18, 2021"
+						src="badges/boost.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+				</p>
+				
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" id='statusgolden' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<p style="font-size: 20px; position: absolute; top: 259px; left: 40px;" class="title"> Job: Owner</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;">Discord:</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
 						class="button"
 						id='goldentag'
 						onclick="window.location.href='https://discordapp.com/users/514754244612456459/'"
 					>
-						Xd_Golden_Tiger#0001
+					Xd_Golden_Tiger#0001
 					</button>
-					<p>‏‏‎ ‎‎</p>
+					
 				</p>
 			</div>
 		</div>
+
 		
-		<div class="column">
-			<div class="card">
+		<div  class="column">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
-				<img id='jadeimg' class="staffav" src="staff-images/night.png" alt="Ben Markerson" />
-				<h1 style="font-size: 39px;" class='jade'>Jade_Moon</h1>
+				<img class="staffav" id='jadeimg' class="staffav" src="staff-images/night.png" alt="Jade" />
+				<h1 style="font-size: 39px; position: absolute; top: 180px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);" class='jade'>Jade_Moon</h1>
+
+				<p style="position: absolute; top: 167px;">
+					 
+					
+					
+					<img
+						class="tooltipped" data-tooltip="HypeSquad Bravery"
+						src="badges/BraveryLogo.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+
+					
+				</p>
 				
-				<img id='statusjade' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
-				<p class="title">Co-Owner</p>
-				<p>Discord:</p>
-				<p>
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" id='statusjade' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<p style="font-size: 20px; position: absolute; top: 259px; left: 40px;" class="title"> Job: Manager</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;">Discord:</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
 						class="button"
 						id='jadetag'
 						onclick="window.location.href='https://discordapp.com/users/810844397113049108/'"
 					>
-						Jade_Moon#0001
+					Jade_Moon#0001
 					</button>
-					<p>‏‏‎ ‎‎</p>
+					
 				</p>
 			</div>
 		</div>
-		
-		
 
-		
-		
-				
-
-		
-
-
-		<div class="column">
-			<div class="card">
+		<div  class="column">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
-				<img id='kitimg' class="staffav" src="staff-images/Kitsu.png" alt="Kitsu" />
-				<h1 style="font-size: 39px;" class='kit'>Kitsu</h1>
+				<img class="staffav" id='kitimg' class="staffav" src="staff-images/Kitsu.png" alt="Kitsu" />
+				<h1 style="font-size: 39px; position: absolute; top: 180px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);" class='kit'>Kitsu</h1>
+
+				<p style="position: absolute; top: 167px;">
+					 
+					
+					
+					
+					<img
+						class="tooltipped" data-tooltip="HypeSquad Brilliance"
+						src="badges/BrillianceLogo.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Early Supporter"
+						src="badges/earlsup.png"
+						alt="Gamearoo"
+						style="width: 10%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Subscriber since Subscriber since Aug 5, 2020"
+						src="badges/Nitro_badge.png"
+						alt="Gamearoo"
+						style="width: 10%"
+					/>
+					<img
+						class="tooltipped" data-tooltip="Server Boosting since Nov 13, 2021"
+						src="badges/boost.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+
+					
+				</p>
 				
-				<img id='statuskit' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
-				<p class="title">Manager</p>
-				<p>Discord:</p>
-				<p>
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" id='statuskit' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<p style="font-size: 20px; position: absolute; top: 259px; left: 40px;" class="title"> Job: Manager</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;">Discord:</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
 						class="button"
 						id='kittag'
-						onclick="window.location.href='https://discordapp.com/users/220578609335631872/'"
+                onclick="window.location.href='https://discordapp.com/users/220578609335631872/'"
 					>
-						Kitsu#0417
+					Kitsu#0417
 					</button>
-					<p>‏‏‎ ‎‎</p>
+					
 				</p>
 			</div>
 		</div>
 		
-		 <div class="column">
-			<div class="card">
+		
+		
+
+		
+		
+		<div  class="column">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
-				<img
-					class="staffav"
-					id='imglol'
-					src="staff-images/lol.png"
-					alt="It's KataeTea"
-				/>
-				<h1 style="font-size: 39px;" class='lol'>lolilaifuu</h1>
+				<img class="staffav" id='imglol'
+				src="staff-images/lol.png"
+				alt="lolilaifuu" />
+				<h1 style="font-size: 39px; position: absolute; top: 180px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);" class='lol'>lolilaifuu</h1>
+
+				<p style="position: absolute; top: 167px;">
+					 
+					
+					
+					
+					<img
+						class="tooltipped" data-tooltip="HypeSquad Brilliance"
+						src="badges/BrillianceLogo.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+					
+
+					
+				</p>
 				
-				<img id='statuslol' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
-				<p class="title">Manager</p>
-				<p>Discord:</p>
-				<p>
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" id='statuslol' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<p style="font-size: 20px; position: absolute; top: 259px; left: 40px;" class="title"> Job: Manager</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;">Discord:</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
 						class="button"
 						id="loltag"
 						onclick="window.location.href='https://discordapp.com/users/545972313745522688/'"
 					>
-                    lolilaifuu#1660
+					lolilaifuu#1660
 					</button>
-					<p>‏‏‎ ‎‎</p>
+					
 				</p>
 			</div>
-		</div>
-		
-		
-				
+		</div>	
 
-		<div class="column">
-			<div class="card">
+		
+
+		<div  class="column">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
-				<img id="ajimg" class="staffav" src="staff-images/AJ.png" alt="AJ" />
-				<h1 style="font-size: 39px;" class='aj'>AJ</h1>
-				
-				<img id='statusaj' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<img class="staffav" id="ajimg" class="staffav" src="staff-images/AJ.png" alt="AJ" />
+				<h1 style="font-size: 39px; position: absolute; top: 180px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);" class='aj'>AJ</h1>
 
-				<p class="title">Trial Staff (Dev)</p>
-				<p>Discord:</p>
-				<p>
+				<p style="position: absolute; top: 167px;">
+					 
+					
+					
+					
+					<img
+						class="tooltipped" data-tooltip="HypeSquad Ballance"
+						src="badges/BalanceLogo.png"
+						alt="Gamearoo"
+						style="width: 8%"
+					/>
+					<img
+					class="tooltipped" data-tooltip="Subscriber since Subscriber since Jun 29, 2021"
+						src="badges/Nitro_badge.png"
+						alt="Gamearoo"
+						style="width: 10%"
+					/>
+					
+
+					
+				</p>
+				
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" id='statusaj' class="status" src="staff-images/offline.png" alt="Ben Markerson" />
+				<p style="font-size: 20px; position: absolute; top: 259px; left: 40px;" class="title"> Job: Trial Staff (Dev)</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;">Discord:</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
-						title="Andrew | Platinum Industries#9937"
+					class="tooltipped" data-tooltip="Andrew | Platinum Industries#9937"
 						class="button"
 						id='ajtag'
-						onclick="window.location.href='https://discordapp.com/users/531885534331797524/'"
+                onclick="window.location.href='https://discordapp.com/users/531885534331797524/'"
 					>
-						Andrew | Platin...
+					Andrew | Platin...
 					</button>
-					<p>‏‏‎ ‎‎</p>
+					
 				</p>
 			</div>
-		</div>
-</dev>
+		</div>	
+		
+		
+		 
+		
+		
+				
 
+		
 		
 
 		
@@ -526,7 +750,7 @@
 		
 
 		 <div class="column">
-			<div class="card">
+			<div style="height: 459px;" class="card">
 				<p>‏‏‎ ‎‎</p>
 				<img
 					class="staffav"
@@ -534,12 +758,13 @@
 					alt="Open"
 					style="width: 128px"
 				/>
-				<h1 style="font-size: 39px;">Open</h1>
-				<p>‏‏‎ ‎‎</p>
-				<p>‏‏‎ ‎‎</p>
-				<p class="title">This Could Be You!</p>
-				<p>Learn More</p>
-				<p>
+				
+				<img style="top: 140px; left: 152px; position: absolute; width: 30px; height: 30px;" data-tooltip="Apps Are Open" id='statusbb' class="status tooltipped" src="staff-images/online.png" alt="Ben Markerson" />
+				<h1 style="font-size: 39px; position: absolute; top: 180px; left: 40px; position: absolute; left: 50%; transform: translateX(-50%);">Open</h1>
+				
+				<p style="font-size: 20px; position: absolute; top: 259px; left: 40px;" class="title">This Could Be You!</p>
+				<p style="font-size: 20px; position: absolute; top: 300px; left: 40px;">Learn More</p>
+				<p style="font-size: 50px; position: absolute; top: 300px; left: 0px; width: 100%;">
 					<button
 						class="button"
 						onclick="window.location.href='https://discord.gg/Gamearoo'"

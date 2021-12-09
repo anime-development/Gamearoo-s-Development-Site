@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gamearoo Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Gamearoo Development</title>
 
 		<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
 		<link rel="stylesheet" href="https://gamearoodev.com/css/navbar.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="icon" type="image/png" href="https://gamearoodev.com/logo.png">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="https://gamearoodev.com/logo.png" />
 		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
@@ -24,50 +33,111 @@
 		/>
 
 		<style>
-            body {
-                font-family: 'Roboto', sans-serif;
-                background-color: #333333;
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-        </style>
-
-		
+			body {
+				font-family: "Roboto", sans-serif;
+				background-color: #333333;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
 	</head>
+	<script type="text/javascript" async>
+		$(document).ready(function () {
+			$(".dropdown-trigger").dropdown({ hover: true, alignment: "bottom" });
+		});
+	</script>
 
 	<body>
-		
-	
-  
-				
-				
-				
-				
+		<ul
+			id="dropdown1"
+			style="
+				position: absolute;
+				margin-top: 250%;
+				right: 0px;
+				background-color: magenta;"
+			class="dropdown-content"
+		>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/info"
+					>Info</a
+				>
+			</li>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/punish"
+					>Punish Command</a
+				>
+			</li>
 
-				<nav>
-					<div class="nav-wrapper navbar-transition" style="background: #800080;">
-						<a href="/" class="brand-logo" style="margin-left: 10px; font-size: 20px;">Gamearoo's Development</a>
-		
-						<ul class="right hide-on-med-and-down">
-							<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com">Home</a></li>
-							<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/staff">Our Staff</a></li>
-							<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/bots">Our Bots</a></li>
-							<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/ramv10/info">Ram v10 info</a></li>
-							<li><a class="waves-effect waves-light btn" href="https://discord.gg/Gamearoo">Support</a></li>
-						</ul>
-					</div>
-				</nav>
-				
-			
-		
-		
+			<!-- <li><a style="color: white" href="#!">ChangeLog</a></li> -->
+		</ul>
+		<nav>
+			<div class="nav-wrapper navbar-transition" style="background: #800080">
+				<a
+					href="/"
+					class="brand-logo"
+					style="margin-left: 10px; font-size: 20px"
+					>Gamearoo's Development</a
+				>
+
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/staff"
+							>Our Staff</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/bots"
+							>Our Bots</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#!"
+							>Ram v10<i class="material-icons right">arrow_drop_down</i></a
+						>
+					</li>
+
+					<!-- <li>
+						<a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#"
+							>Ram v11 Beta<i class="material-icons right"
+								>arrow_drop_down</i
+							></a
+						>
+					</li> -->
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://discord.gg/Gamearoo"
+							>Support</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
 		<center>
-		    <h1>Bots posted to top.gg</h1>
-		    <a href="https://top.gg/bot/564579659526832178">
+			<h1>Bots posted to top.gg</h1>
+			<a href="https://top.gg/bot/564579659526832178">
   <img src="https://top.gg/api/widget/564579659526832178.svg" alt="Ram" /></a>
 		<a href="https://top.gg/bot/880125847196041246">
   <img src="https://top.gg/api/widget/880125847196041246.svg" alt="Spam Protection" /> </a>
@@ -75,31 +145,55 @@
   </a>
 		</center>
 		<div class="fixed-action-btn">
-            <a class="btn-floating btn-large" style="width: 70px; height: 70px; background-color: #5865F2;">
-                <i class="large material-icons" style="font-size: 40px; margin-top: 6px;">discord</i>
-            </a>
-            <ul>
-                <li><a class="btn-floating waves-effect waves-light btn-large tooltipped" style="background-color: transparent;" data-position="left" data-tooltip="Gamearoo's Development" href="https://discord.gg/6Aq6Zu5VN7" target="_blank"><img width="80" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" src="https://gamearoodev.com/logo.png" \></a></li>
-            </ul>
-        </div>
+			<a
+				class="btn-floating btn-large"
+				style="width: 70px; height: 70px; background-color: #5865f2"
+			>
+				<i class="large material-icons" style="font-size: 40px; margin-top: 6px"
+					>discord</i
+				>
+			</a>
+			<ul>
+				<li>
+					<a
+						class="btn-floating waves-effect waves-light btn-large tooltipped"
+						style="background-color: transparent"
+						data-position="left"
+						data-tooltip="Gamearoo's Development"
+						href="https://discord.gg/6Aq6Zu5VN7"
+						target="_blank"
+						><img
+							width="80"
+							style="
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%, -50%);
+							"
+							src="https://gamearoodev.com/logo.png"
+							\
+					/></a>
+				</li>
+			</ul>
+		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.fixed-action-btn').floatingActionButton({
-                    direction: 'buttom'
-                });
+		<script>
+			$(document).ready(function () {
+				$(".fixed-action-btn").floatingActionButton({
+					direction: "buttom",
+				});
 
-                $('.tooltipped').tooltip();
+				$(".tooltipped").tooltip();
 
-                $("img").on("mousedown", function () {
-                    return false;
-                });
+				$("img").on("mousedown", function () {
+					return false;
+				});
 
-                $("a").on("mousedown", function () {
-                    return false;
-                });
-            });
-        </script>
+				$("a").on("mousedown", function () {
+					return false;
+				});
+			});
+		</script>
 	</body>
 
 	<footer

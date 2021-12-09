@@ -40,18 +40,93 @@
 		
 		<link rel="stylesheet" href="css/staff.css" />
 	</head>
+	<script type="text/javascript" async>
+		$(document).ready(function () {
+			$(".dropdown-trigger").dropdown({ hover: true, alignment: "bottom" });
+		});
+	</script>
 	<body>
 	    
+		<ul
+			id="dropdown1"
+			style="
+				position: absolute;
+				margin-top: 250%;
+				right: 0px;
+				background-color: magenta;
+			"
+			class="dropdown-content"
+		>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/info"
+					>Info</a
+				>
+			</li>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/punish"
+					>Punish Command</a
+				>
+			</li>
+
+			<!-- <li><a style="color: white" href="#!">ChangeLog</a></li> -->
+		</ul>
 		<nav>
-			<div class="nav-wrapper navbar-transition" style="background: #800080;">
-				<a href="/" class="brand-logo" style="margin-left: 10px; font-size: 20px;">Gamearoo's Development</a>
+			<div class="nav-wrapper navbar-transition" style="background: #800080">
+				<a
+					href="/"
+					class="brand-logo"
+					style="margin-left: 10px; font-size: 20px"
+					>Gamearoo's Development</a
+				>
 
 				<ul class="right hide-on-med-and-down">
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com">Home</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/staff">Our Staff</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/bots">Our Bots</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://gamearoodev.com/ramv10/info">Ram v10 info</a></li>
-					<li><a class="waves-effect waves-light btn" href="https://discord.gg/Gamearoo">Support</a></li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/staff"
+							>Our Staff</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://gamearoodev.com/bots"
+							>Our Bots</a
+						>
+					</li>
+					<li>
+						<a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#!"
+							>Ram v10<i class="material-icons right">arrow_drop_down</i></a
+						>
+					</li>
+
+					<!-- <li>
+						<a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#"
+							>Ram v11 Beta<i class="material-icons right"
+								>arrow_drop_down</i
+							></a
+						>
+					</li> -->
+					<li>
+						<a
+							class="waves-effect waves-light btn"
+							href="https://discord.gg/Gamearoo"
+							>Support</a
+						>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -63,7 +138,7 @@
 				<img class="staffav" src="bots-img/ram.png" alt="ram" />
 				<h1 style="font-size: 39px;">
 					Ram
-					<img title="Verified Bot" src="badges/verified.png" alt="verified" style="width: 20%" />
+					<img class="tooltipped" data-tooltip="Verified Bot" src="badges/verified.png" alt="verified" style="width: 20%" />
 				</h1>
 				<p>Public Bot</p>
 				<p class="title">V9.0.4</p>
@@ -86,7 +161,7 @@
 				<p>‏‏‎ ‎‎</p>
 				<img class="staffav" src="bots-img/lib.png" alt="ram" />
 				<h1 style="font-size: 33px;">
-					Liberty Bot
+					Liberty
 					<img  src="badges/bot.png" alt="verified" style="width: 15%" />
 				</h1>
 				<p>Public Bot</p>
@@ -129,9 +204,9 @@
 		<div class="column">
 			<div class="card">
 				<p>‏‏‎ ‎‎</p>
-				<img class="staffav" src="bots-img/rem.png" alt="rem" />
-				<h1 style="font-size: 39px;" title='Spam Protection'>
-					SP <img src="badges/bot.png" alt="verified" style="width: 15%" />
+				<img class="staffav" src="https://gamearoodev.com/bots-img/sp.png" alt="rem" />
+				<h1 style="font-size: 33px;" class="tooltipped" data-tooltip='Spam Protection'>
+					Spam Protection <img src="badges/bot.png" alt="verified" style="width: 15%" />
 				</h1>
 				<p>Public Bot</p>
 				<p class="title">V1.0.0</p>
@@ -143,7 +218,30 @@
 						class="button"
 						onclick="window.location.href='https://discord.com/api/oauth2/authorize?client_id=793860265577152522&permissions=8&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fdashboard%2Fapi%2Fauth%2Fdiscord%2Fredirect&scope=bot'"
 					>
-						Invite Rem
+						Invite Spam Protection
+					</button>
+					<p>‏‏‎ ‎‎</p>
+				</p>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<p>‏‏‎ ‎‎</p>
+				<img class="staffav" src="https://gamearoodev.com/bots-img/sora.png" alt="ram" />
+				<h1 style="font-size: 33px;">
+					Sora Kasugano
+					<img  src="badges/bot.png" alt="verified" style="width: 15%" />
+				</h1>
+				<p>Public Bot</p>
+				<p class="title">V1.0.0-Dev.5</p>
+				<p>Invite:</p>
+				<p>
+					<button
+						class="button"
+						onclick="#"
+					>
+						Coming Soon!
 					</button>
 					<p>‏‏‎ ‎‎</p>
 				</p>

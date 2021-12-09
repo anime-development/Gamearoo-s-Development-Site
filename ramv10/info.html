@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Gamearoo Development</title>
+		<title>Gamearoo Development - Ramv10 - Info</title>
 
 		<link rel="stylesheet" href="https://gamearoodev.com/css/main.css" />
 		<link rel="stylesheet" href="https://gamearoodev.com/css/navbar.css" />
@@ -45,8 +45,40 @@
 			}
 		</style>
 	</head>
+	<script type="text/javascript" async>
+		$(document).ready(function () {
+			$(".dropdown-trigger").dropdown({ hover: true, alignment: "bottom" });
+		});
+	</script>
 
 	<body>
+		<ul
+			id="dropdown1"
+			style="
+				position: absolute;
+				margin-top: 250%;
+				right: 0px;
+				background-color: magenta;
+			"
+			class="dropdown-content"
+		>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/info"
+					>Info</a
+				>
+			</li>
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/punish"
+					>Punish Command</a
+				>
+			</li>
+
+			<li>
+				<a style="color: white" href="https://gamearoodev.com/ramv10/changelog"
+					>ChangeLog</a
+				>
+			</li>
+		</ul>
 		<nav>
 			<div class="nav-wrapper navbar-transition" style="background: #800080">
 				<a
@@ -80,11 +112,23 @@
 					</li>
 					<li>
 						<a
-							class="waves-effect waves-light btn"
-							href="https://gamearoodev.com/ramv10/info"
-							>Ram v10 info</a
+							class="waves-effect waves-light btn dropdown-trigger"
+							data-target="dropdown1"
+							href="#!"
+							>Ram v10<i class="material-icons right">arrow_drop_down</i></a
 						>
 					</li>
+
+					<!-- <li>
+					<a
+						class="waves-effect waves-light btn dropdown-trigger"
+						data-target="dropdown1"
+						href="#"
+						>Ram v11 Beta<i class="material-icons right"
+							>arrow_drop_down</i
+						></a
+					>
+				</li> -->
 					<li>
 						<a
 							class="waves-effect waves-light btn"
